@@ -2,16 +2,8 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+
 
 .App-header {
   background-color: #282c34;
@@ -28,11 +20,431 @@
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+.tittle {
+  margin-top: 20px;
+  padding-left: 50px;
+  padding: 12px;
+  text-align: center;
 }
+.header {
+  color: #fff;
+  border-radius: 15px;
+ box-shadow: 0px 2px 4px -1px rgb(0 0 0 / 20%), 0px 4px 5px 0px rgb(0 0 0 / 14%), 0px 1px 10px 0px rgb(0 0 0 / 12%);
+  background-color: #3f51b5;
+}
+.form-input {
+  flex: 4 1;
+  outline: none;
+  border: none;
+  border-bottom: 2px solid #555;
+  width: 65%;
+  height: 40px;
+  margin: 20px 0;
+  display: flex;
+  margin: 0 0px;
+  
+ 
+}
+
+.jss1 {
+  margin: 30px auto;
+  
+  padding: 15px;
+  box-shadow: 0px 0px 12px -3px #000000;
+  border-radius: 9px;
+  justify-content: space-between;
+}
+.tittle-input{
+  
+  font-weight: bold;
+
+}
+.add-btn{
+  background: linear-gradient(to right,#196BCA ,#6433E0);
+  background-color: #196BCA;
+  color: #fff;
+  font-family: Trebuchet MS;
+  font-size: 18px;
+  font-weight: 800;
+  font-style: normal;
+  text-decoration: none;
+  padding: 8px 12px;
+  margin-top: 10px;
+  border: 0px solid #000;
+  border-radius: 20px;
+  display: inline-block;
+ }
+ .add-btn:hover{
+  background: linear-gradient(to right,#5482d0 ,#7d5ee3);
+  background-color: #5482d0;
+ }
+ .add-btn:active{
+  transform: scale(0.95);
+ }
+ .div-spacer{
+  border: 2px solid #bdbdbd;
+  margin: 20px auto;
+  display: flex;
+  padding: 20px;
+  border-radius: 9px;
+  justify-content: space-between;
+}
+
+.task-box-typography {
+  color: #8f8f8f;
+  
+  font-size: 0.875rem;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: 400;
+    line-height: 1.43;
+    letter-spacing: 0.01071em;
+}
+
+.button-del {
+  
+  --background: #e41212;
+
+  --background-hover: #9f0f0f;
+  --text: #fff;
+  --shadow: rgba(0, 9, 61, .2);
+  --paper: #5c86ff;
+  --paper-lines: #fff;
+  --trash: #ffffff;
+  --trash-lines: #ffffff;
+  --check: #fff;
+  
+  position: relative;
+  border: none;
+  outline: none;
+  background: none;
+  padding: 6px 10px;
+  
+  
+  border-radius: 7px;
+ 
+  -webkit-appearance: none;
+  -webkit-tap-highlight-color: transparent;
+  cursor: pointer;
+  display: flex;
+  color: var(--text);
+  background: var(--btn, var(--background));
+  box-shadow: 0 var(--shadow-y, 4px) var(--shadow-blur, 8px) var(--shadow);
+  transform: scale(var(--scale, 1));
+  transition: transform 0.3s, box-shadow 0.3s, background 0.3s;
+  }
+  .button-del span {
+  display: block;
+  font-size: 15px;
+  line-height: 25px;
+  font-weight: 600;
+  opacity: var(--span-opacity, 1);
+  transform: translateX(var(--span-x, 0)) translateZ(0);
+  transition: transform 0.4s ease var(--span-delay, 0.2s), opacity 0.3s ease var(--span-delay, 0.2s);
+  }
+  .button-del .trash {
+  display: block;
+  position: relative;
+  left: -5px;
+  transform: translate(var(--trash-x, 0), var(--trash-y, 1px)) translateZ(0) scale(var(--trash-scale, 0.64));
+  transition: transform 0.5s;
+  }
+  .button-del .trash:before, .button-del .trash:after {
+  content: '';
+  position: absolute;
+  height: 8px;
+  width: 2px;
+  border-radius: 1px;
+  background: var(--icon, var(--trash));
+  bottom: 100%;
+  transform-origin: 50% 6px;
+  transform: translate(var(--x, 3px), 2px) scaleY(var(--sy, 0.7)) rotate(var(--r, 0deg));
+  transition: transform 0.4s, background 0.3s;
+  }
+  .button-del .trash:before {
+  left: 1px;
+  }
+  .button-del .trash:after {
+  right: 1px;
+  --x: -3px;
+  }
+  .button-del .trash .top {
+  position: absolute;
+  overflow: hidden;
+  left: -4px;
+  right: -4px;
+  bottom: 100%;
+  height: 40px;
+  z-index: 1;
+  transform: translateY(2px);
+  }
+  .button-del .trash .top:before, .button-del .trash .top:after {
+  content: '';
+  position: absolute;
+  border-radius: 1px;
+  background: var(--icon, var(--trash));
+  width: var(--w, 12px);
+  height: var(--h, 2px);
+  left: var(--l, 8px);
+  bottom: var(--b, 5px);
+  transition: background 0.3s, transform 0.4s;
+  }
+  .button-del .trash .top:after {
+  --w: 28px;
+  --h: 2px;
+  --l: 0;
+  --b: 0;
+  transform: scaleX(var(--trash-line-scale, 1));
+  }
+  .button-del .trash .top .paper {
+  width: 10px;
+  height: 14px;
+  background: var(--paper);
+  left: 7px;
+  bottom: 0;
+  border-radius: 1px;
+  position: absolute;
+  transform: translateY(-16px);
+  opacity: 0;
+  }
+  .button-del .trash .top .paper:before, .button-del .trash .top .paper:after {
+  content: '';
+  width: var(--w, 10px);
+  height: 2px;
+  border-radius: 1px;
+  position: absolute;
+  left: 2px;
+  top: var(--t, 2px);
+  background: var(--paper-lines);
+  transform: scaleY(0.7);
+  box-shadow: 0 9px 0 var(--paper-lines);
+  }
+  .button-del .trash .top .paper:after {
+  --t: 5px;
+  --w: 7px;
+  }
+  .button-del .trash .box {
+  width: 20px;
+  height: 25px;
+  border: 2px solid var(--icon, var(--trash));
+  border-radius: 1px 1px 4px 4px;
+  position: relative;
+  overflow: hidden;
+  z-index: 2;
+  transition: border-color 0.3s;
+  }
+  .button-del .trash .box:before, .button-del .trash .box:after {
+  content: '';
+  position: absolute;
+  width: 4px;
+  height: var(--h, 20px);
+  top: 0;
+  left: var(--l, 50%);
+  background: var(--b, var(--trash-lines));
+  }
+  .button-del .trash .box:before {
+  border-radius: 2px;
+  margin-left: -2px;
+  transform: translateX(-3px) scale(0.6);
+  box-shadow: 10px 0 0 var(--trash-lines);
+  opacity: var(--trash-lines-opacity, 1);
+  transition: transform 0.4s, opacity 0.4s;
+  }
+  .button-del .trash .box:after {
+  --h: 16px;
+  --b: var(--paper);
+  --l: 1px;
+  transform: translate(-0.5px, -16px) scaleX(0.5);
+  box-shadow: 7px 0 0 var(--paper), 14px 0 0 var(--paper), 21px 0 0 var(--paper);
+  }
+  .button-del .trash .check {
+  padding: 4px 3px;
+  border-radius: 50%;
+  background: green;
+  position: absolute;
+  left: 2px;
+  top: 24px;
+  opacity: var(--check-opacity, 0);
+  transform: translateY(var(--check-y, 0)) scale(var(--check-scale, 0.2));
+  transition: transform var(--check-duration, 0.2s) ease var(--check-delay, 0s), opacity var(--check-duration-opacity, 0.2s) ease var(--check-delay, 0s);
+  }
+  .button-del .trash .check svg {
+  width: 12px;
+  height: 10px;
+  display: block;
+  fill: none;
+  stroke-width: 1.5;
+  stroke-dasharray: 9px;
+  stroke-dashoffset: var(--check-offset, 9px);
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke: var(--check);
+  transition: stroke-dashoffset 0.4s ease var(--checkmark-delay, 0.4s);
+  }
+  .button-del.delete {
+  --span-opacity: 0;
+  --span-x: 16px;
+  --span-delay: 0s;
+  --trash-x: 27px;
+  --trash-y: 2px;
+  --trash-scale: 0.8;
+  --trash-lines-opacity: 0;
+  --trash-line-scale: 0;
+  --icon: #fff;
+  --check-offset: 0;
+  --check-opacity: 1;
+  --check-scale: 1;
+  --check-y: 16px;
+  --check-delay: 1.7s;
+  --checkmark-delay: 2.1s;
+  --check-duration: 0.55s;
+  --check-duration-opacity: 0.3s;
+  }
+  .button-del.delete .trash:before, .button-del.delete .trash:after {
+  --sy: 1;
+  --x: 0;
+  }
+  .button-del.delete .trash:before {
+  --r: 40deg;
+  }
+  .button-del.delete .trash:after {
+  --r: -40deg;
+  }
+  .button-del.delete .trash .top .paper {
+  animation: paper 1.5s linear forwards 0.5s;
+  }
+  .button-del.delete .trash .box:after {
+  animation: cut 1.5s linear forwards 0.5s;
+  }
+  .button-del.delete, .button-del:hover {
+  --btn: var(--background-hover);
+  --shadow-y: 5px;
+  --shadow-blur: 9px;
+  }
+  .button-del:active {
+  --shadow-y: 2px;
+  --shadow-blur: 5px;
+  --scale: 0.94;
+  }
+  @keyframes paper {
+  10%, 100% {
+  opacity: 1;
+  }
+  20% {
+  transform: translateY(-16px);
+  }
+  40% {
+  transform: translateY(0);
+  }
+  70%, 100% {
+  transform: translateY(24px);
+  }
+  }
+  @keyframes cut {
+  0%, 40% {
+  transform: translate(-0.5px, -16px) scaleX(0.5);
+  }
+  100% {
+  transform: translate(-0.5px, 24px) scaleX(0.5);
+  }
+  }
+  html {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  }
+  * {
+  box-sizing: inherit;
+  }
+  *:before, *:after {
+  box-sizing: inherit;
+  }
+ 
+
+ 
+
+/* CSS */
+.button-88 {
+ 
+  font-size: 14px;
+  padding: 5px 10px;
+  color: white;
+  background: #ad5389;
+  background: linear-gradient(0deg, rgba(20,167,62,1) 0%, rgba(102,247,113,1) 100%);
+  border: none;
+  box-shadow: 0 0.7em 1.5em -0.5em #14a73e98;
+  border-radius:30%;
+  cursor: pointer;
+  
+}
+
+.button-88:hover {
+  background: linear-gradient(0deg, rgb(14, 95, 37) 0%, rgb(79, 195, 88) 100%);
+  box-shadow: 0 0.5em 1.5em -0.5em #14a73e98;
+}
+
+.button-88:active {
+  box-shadow: 0 0.3em 1em -0.5em #14a73e98;
+}
+.button-88:disabled{
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.button-88-save {
+ 
+  font-size: 14px;
+  
+  padding: 5px 10px;
+  color: black;
+  background: linear-gradient(348deg, #f78820 27%, #ffc94d 100%);
+
+  border: none;
+  box-shadow: 0 0.7em 1.5em -0.5em #bdaa0798;
+  border-radius:30%;
+  cursor: pointer;
+  
+}
+
+.button-88-save:hover {
+  background:#e87203;
+  box-shadow: 0 0.5em 1.5em -0.5em #14a73e98;
+}
+
+.button-88-save:active {
+  box-shadow: 0 0.3em 1em -0.5em #b8ca1298;
+}
+.button-88-save:disabled{
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+ul li{
+  list-style: none;
+  border: 1px solid #ccc;
+  margin: 10px 0;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-transform: capitalize;
+}
+
+ul li .active{
+  opacity: 0.5;
+  text-decoration: line-through;
+}
+ul li input,
+.row input{
+  margin-right: 5px;
+  transform: translateY(1px);
+}
+
+
+
+label{
+  cursor: pointer;
+}
+
+
+
+
